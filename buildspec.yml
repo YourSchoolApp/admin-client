@@ -1,0 +1,21 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - yarn
+      - yarn add --dev jest-junit @babel/plugin-proposal-private-property-in-object
+      - yarn run build
+      - yarn run test -- --coverage --watchAll=false --testResultsProcessor="jest-junit" --detectOpenHandles
+artifacts:
+  name: "build-output"
+  files:
+    - "**/*"
+reports:
+  test-report:
+    files:
+      - 'junit.xml'
+    file-format: 'JUNITXML'
+  coverage-report:
+    files:
+      - 'coverage/clover.xml'
+    file-format: 'CLOVERXML'
