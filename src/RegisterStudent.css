@@ -1,0 +1,23 @@
+
+.form-container {
+    margin-top: 2rem;
+  }
+  
+  .form-field {
+    margin-bottom: 1rem;
+  }
+  
+  .profile-picture-input {
+    display: block;
+    margin-top: 1rem;
+  }
+  .profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-picture-container input {
+    margin-top: 8px;
+  }  
