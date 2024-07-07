@@ -13,6 +13,7 @@ const options = [
   { label: 'Section 2', path: '/section2' },
   { label: 'Section 3', path: '/section3' },
   { label: 'Register Student', path: '/register-student' },
+  { label: 'View All Students', path: '/view-student' },
 ];
 
 export default function LongMenu() {
@@ -42,6 +43,8 @@ export default function LongMenu() {
         aria-controls="long-menu"
         aria-haspopup="true"
         onClick={toggleDrawer(true)}
+        
+        
       >
         <MenuIcon />
       </IconButton>

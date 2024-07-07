@@ -1,7 +1,9 @@
+// App.js
 import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';  
 import RegisterStudent from './RegisterStudent';
+import ViewStudents from './ViewStudent';
 import { Typography } from '@mui/material';  
 import './App.css';  
 
@@ -17,6 +19,7 @@ function App() {
             <Route path="/section1" element={<Section1 />} />
             <Route path="/section2" element={<Section2 />} />
             <Route path="/section3" element={<Section3 />} />
+            <Route path="/view-student" element={<ViewStudents />} />
           </Routes>
         </main>
       </div>
